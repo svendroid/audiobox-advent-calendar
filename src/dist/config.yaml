@@ -1,0 +1,16 @@
+# Configuration Audiobox Advent Calendar
+
+# username of your tonies account
+username: yourname@youremailprovider.com
+# password of your tonies account
+password: s3cr3Password
+# folder path containing audio files used in the calendar. They will be uploaded in alphabetical order. Day 1 the first episode, day 2 the second, ...
+folder: /tonies/adventstories/
+# name of the tonie which should be used for the advent calendar. Previous contents on it will be deleted. e.g. Olaf
+tonieName: Peter
+#optional - required if you have more than one household. e.g. Peters Haushalt
+#householdName: Peters Household
+#optional - by default current year 1 december is used
+#startDate: 2022-12-01
+#optional - default current year 24th december is used
+#endDate: 2022-12-24
