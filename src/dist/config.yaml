@@ -4,7 +4,7 @@
 username: yourname@youremailprovider.com
 # password of your tonies account
 password: s3cr3Password
-# folder path containing audio files used in the calendar. They will be uploaded in alphabetical order. Day 1 the first episode, day 2 the second, ...
+# folder path (use absolute path to avoid errors e.g. when running via cronjob) containing audio files used in the calendar. They will be uploaded in alphabetical order. Day 1 the first episode, day 2 the second, ...
 folder: /tonies/adventstories/
 # name of the tonie which should be used for the advent calendar. Previous contents on it will be deleted. e.g. Olaf
 tonieName: Peter

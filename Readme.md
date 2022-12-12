@@ -25,9 +25,10 @@ today will be synced to your tonie. Make sure to run the sync every day and have
         * run `./bin/audiobox-advent-calendar sync ./2022-config.yaml --dryrun` to check your config
         * run without dryrun to start sync
     * Setup cronjob:
-        * `crontab -e` and add a new
-          line `5 0 1-24 12 * /projects/audiobox-advent-calendar/bin/audiobox-advent-calendar sync /projects/audiobox-advent-calendar/2022-config.yaml`
+        * `crontab -e`
+        * add a new line `5 0 1-24 12 * /projects/audiobox-advent-calendar/bin/audiobox-advent-calendar sync /projects/audiobox-advent-calendar/2022-config.yaml 2>&1 | logger -t adventcalendarsync`
           which will run the sync "At 00:05 on every day-of-month from 1 through 24 in December."
+        * `grep 'adventcalendarsync' /var/log/syslog` to get logs
 
 ## Command line Usage
 
