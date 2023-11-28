@@ -64,7 +64,7 @@ jobs:
           context: .
           file: docker/audiobox-advent-calendar-standalone.Dockerfile
           push: true
-          tags: ghcr.io/svendroid/audiobox-advent-calendar:standalone
+          tags: ghcr.io/svendroid/audiobox-advent-calendar-standalone:latest
           labels: ${{ steps.docker_meta.outputs.labels }}
 
   cron_image:
@@ -104,5 +104,5 @@ jobs:
           context: .
           file: docker/audiobox-advent-calendar-cron.Dockerfile
           push: true
-          tags: ghcr.io/svendroid/audiobox-advent-calendar:cron
+          tags: ghcr.io/svendroid/audiobox-advent-calendar-cron:latest
           labels: ${{ steps.docker_meta.outputs.labels }}
