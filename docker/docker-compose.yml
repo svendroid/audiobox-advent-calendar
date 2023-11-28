@@ -2,10 +2,7 @@ version: "3.3"
 
 services:
   audiobox-advent-calendar-cron:
-    image: "audiobox-advent-calendar-cron"
-    build:
-      context: ..
-      dockerfile: ./docker/audiobox-advent-calendar-cron.Dockerfile
+    image: "ghcr.io/svendroid/audiobox-advent-calendar-cron:latest"
     restart: unless-stopped
     container_name: audiobox-advent-calendar
     volumes:
