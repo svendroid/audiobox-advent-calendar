@@ -1,4 +1,4 @@
-FROM audiobox-advent-calendar-standalone
+FROM ghcr.io/svendroid/audiobox-advent-calendar-standalone:latest
 
 ADD ./docker/entrypoint.sh .
 RUN chmod 755 /entrypoint.sh
