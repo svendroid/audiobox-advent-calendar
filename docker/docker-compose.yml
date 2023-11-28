@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  audiobox-advent-calendar-cron:
+    image: "audiobox-advent-calendar-cron"
+    build:
+      context: ..
+      dockerfile: ./docker/audiobox-advent-calendar-cron.Dockerfile
+    restart: unless-stopped
+    container_name: audiobox-advent-calendar
+    volumes:
+      - ./config:/config
+      - ./audioFiles:/audioFiles
